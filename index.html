@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicated to Kasthu ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Decor -->
+    <div class="bg-gradient"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand"> Kachuuu ❤️</a>
+            <ul class="nav-links">
+                <li><a href="#surprises">Surprises</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reasons">Reasons</a></li>
+                <li><a href="#letters">Letters</a></li>
+                <li><a href="#secret">Secret</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: Hero / Dedication -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 id="hero-title">This website is only for you, <span class="girl-name"></span> ❤️</h1>
+                <p id="hero-note" class="intro-text"></p>
+
+                <div id="countdown" class="countdown-container" aria-live="polite">
+                    <div class="time-block"><span id="days">00</span><label>Days</label></div>
+                    <div class="time-block"><span id="hours">00</span><label>Hours</label></div>
+                    <div class="time-block"><span id="minutes">00</span><label>Mins</label></div>
+                    <div class="time-block"><span id="seconds">00</span><label>Secs</label></div>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#surprises" class="btn-primary">Start the Countdown</a>
+                    <a href="#gallery" class="btn-secondary">Open Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: 30 Days of Surprises -->
+        <section id="surprises" class="section highlights">
+            <div class="container">
+                <h2 class="section-title">30 Days. 30 Surprises.</h2>
+                <div id="lock-message" class="lock-banner hidden" role="alert"></div>
+                <div id="surprises-grid" class="cards-grid">
+                    <!-- JS Grid -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Birthday Reveal (Targeted) -->
+        <section id="birthday-reveal" class="reveal-section hidden">
+            <canvas id="confetti-canvas"></canvas>
+            <div class="container reveal-container">
+                <div class="reveal-card">
+                    <h2 id="bday-wish">Happy Birthday, <span class="girl-name"></span>! 🎂❤️</h2>
+                    <p>My love, today is all about you. Here is something special I made.</p>
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <span class="heart-icon">💝</span>
+                            <p>Watch Our Magical Journey...</p>
+                        </div>
+                    </div>
+                    <button id="final-message-btn" class="btn-primary">Open My Final Message</button>
+                    <div id="gift-clue-card" class="clue-mini hidden">
+                        <h4>🎁 A Little Hint...</h4>
+                        <p id="gift-clue-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Our Story Timeline -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Story So Far...</h2>
+                <div id="timeline-container" class="timeline">
+                    <!-- JS Timeline -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Gallery / Memory Wall -->
+        <section id="gallery" class="section glass-bg">
+            <div class="container">
+                <h2 class="section-title">Memory Wall</h2>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All Memories</button>
+                    <button class="filter-btn" data-filter="cute">Cute</button>
+                    <button class="filter-btn" data-filter="fun">Fun</button>
+                    <button class="filter-btn" data-filter="trips">Trips</button>
+                    <button class="filter-btn" data-filter="screenshots">Moments</button>
+                </div>
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- JS Gallery -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: 30 Reasons I Admire You -->
+        <section id="reasons" class="section">
+            <div class="container">
+                <h2 class="section-title">30 Reasons I Admire You</h2>
+                <div class="reason-controls">
+                    <button id="shuffle-reason" class="btn-primary">Shuffle a Reason 🎲</button>
+                </div>
+                <div id="reasons-display" class="reasons-grid">
+                    <!-- JS Reasons -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Open When... Letters -->
+        <section id="letters" class="section glass-bg">
+            <div class="container">
+                <h2 class="section-title">Open When...</h2>
+                <p class="subtitle">For those moments when I'm not right there by your side.</p>
+                <div id="letters-grid" class="letters-grid">
+                    <!-- JS Letters -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Secret Page -->
+        <section id="secret" class="section secret-section">
+            <div class="container">
+                <h2 class="section-title">A Little Secret</h2>
+                <div id="passcode-entry" class="passcode-card">
+                    <p>Enter our secret passcode to reveal something hidden...</p>
+                    <div class="passcode-input-wrapper">
+                        <input type="password" id="passcode-input" placeholder="****" maxlength="4">
+                        <button id="unlock-secret" class="btn-primary">Unlock</button>
+                    </div>
+                </div>
+                <div id="secret-content" class="secret-reveal hidden">
+                    <h3>You Found It! 💖</h3>
+                    <div class="secret-card">
+                        <p id="secret-memory"></p>
+                        <div class="secret-image-placeholder">
+                            <!-- Hidden Memory Image -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>Made with ❤️ </p>
+                <p class="footer-note">All rights to my heart reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Unified Modal for Surprises & Letters -->
+    <div id="modal-backdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title">Surprise!</h2>
+                <button id="close-modal" class="btn-close" aria-label="Close">&times;</button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox-backdrop hidden">
+        <span id="close-lightbox" class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Zoomed view">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
